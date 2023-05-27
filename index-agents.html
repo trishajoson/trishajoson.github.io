@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+        @import url('https://fonts.cdnfonts.com/css/valorant');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav {
+            background-color: rgba(7, 5, 10, 255);
+            width: 100%;
+            height: 80px;
+            border-bottom: 1px solid rgb(138, 57, 138);
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        ul li a {
+            color: white;
+            line-height: 60px;
+            padding: 12px 30px;
+            font-size: 14px;
+            text-decoration: none;
+            border-radius: 2px;
+            margin-right: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-size: medium;
+            margin-right: 20px
+        }
+
+        nav ul li a:hover {
+            background-color: blueviolet;
+        }
+
+        .life {
+            font-family: 'VALORANT', sans-serif;
+            color: white;
+            font-size:50px;
+            text-align: center;
+            top:25%;
+            right:50%;
+        }
+
+        .logo-font {
+            font-family: 'VALORANT', sans-serif;
+            padding-bottom: 15px;
+            text-align: center;
+            font-size: 40px;
+            text-decoration: none;
+            color: azure;
+            display: flex;
+            align-items: center;
+            height: 100%; /* Added height property */
+        }
+
+        .logo-font img {
+            margin-right: 10px; /* Added margin to separate the logo from the text */
+             /* Added height property to match the height of the navbar */
+        }
+
+        .logo-font span {
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            height: 100%; /* Added height property to match the height of the navbar */
+        }
+        body {
+            min-height: 100vh;
+            width: 100%;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        .background-image {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/valooo.png);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .content h1 {
+            font-size: 70px;
+            font-family: 'VALORANT', sans-serif;
+        }
+
+        .content p {
+            margin: 10px 0px 40px;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .initiators {
+            background-color: black;
+            padding: 50px;
+            color: white;
+            padding-top: 40px;
+        }
+        
+        .initiators h2 {
+            font-size: 50px;
+            color: red;
+            font-family: 'VALORANT', sans-serif;
+            text-align: center;
+            padding-bottom:10px;
+        }
+        
+        div.initiators p {
+            text-align: center;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            padding: 10px;
+            padding-top: 10px;
+            padding-bottom:10px;
+            margin: 0px;
+        }
+        .Controllers {
+            background-color: aliceblue;
+            padding: 50px;
+            color: black;
+            padding-top: 40px;
+        }
+        
+        .Controllers h2 {
+            font-size: 50px;
+            color: red;
+            font-family: 'VALORANT', sans-serif;
+            text-align: center;
+            padding-bottom:10px;
+        }
+        
+        div.Controllers p {
+            text-align: center;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            padding: 10px;
+            padding-top: 10px;
+            padding-bottom:10px;
+            margin: 0px;
+        }
+
+        .Duelists {
+            background-color: black;
+            padding: 50px;
+            color: white;
+            padding-top: 40px;
+        }
+        
+        .Duelists h2 {
+            font-size: 50px;
+            color: red;
+            font-family: 'VALORANT', sans-serif;
+            text-align: center;
+            padding-bottom:10px;
+        }
+        
+        div.Duelists p {
+            text-align: center;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            padding: 10px;
+            padding-top: 10px;
+            padding-bottom:10px;
+            margin: 0px;
+        }
+        .sentinels {
+            background-color: white;
+            padding: 50px;
+            color: black;
+            padding-top: 40px;
+        }
+        
+        .sentinels h2 {
+            font-size: 50px;
+            color: red;
+            font-family: 'VALORANT', sans-serif;
+            text-align: center;
+            padding-bottom:10px;
+        }
+        
+        div.sentinels p {
+            text-align: center;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            padding: 10px;
+            padding-top: 10px;
+            padding-bottom:10px;
+            margin: 0px;
+        }
+
+
+        .gallery {
+            width: 1000px;
+            display: flex;
+            overflow-x: scroll;
+        }
+        .gallery2 {
+            width: 800px;
+            display: flex;
+            overflow-x: scroll;
+        }
+        .gallery div{
+            width:100%;
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            flex:none;
+            font-family:'VALORANT', sans-serif;
+            text-align: center;
+            transition: transform 0.5s ;
+
+        }
+        .gallery2 div{
+            width:100%;
+            display:grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 20px;
+            flex:none;
+            font-family:'VALORANT', sans-serif;
+            text-align: center;
+            transition: transform 0.5s ;
+
+        }
+
+
+        .gallery div img {
+            filter: grayscale(100%);
+            transition: transform 0.5s ;
+            margin-bottom: 15px;
+            
+        }
+        .gallery2 div img {
+            filter: grayscale(100%);
+            transition: transform 0.5s ;
+            margin-bottom: 15px;
+            
+        }
+        
+        .gallery-item span {
+            font-family: 'VALORANT', sans-serif;
+            text-align: center;
+            padding-top: 10px;
+            height: 100%;
+            font-size: 16px; /* Adjust the font size as needed */
+          }
+        
+          .gallery2-item span {
+            font-family: 'VALORANT', sans-serif;
+            text-align: center;
+            padding-top: 10px;
+            height: 100%;
+            font-size: 16px; /* Adjust the font size as needed */
+          }
+        
+
+        .gallery::-webkit-scrollbar{
+            display: none;
+        }
+        
+        .gallery2::-webkit-scrollbar{
+            display: none;
+        }
+        
+        .gallerywrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 50px auto;
+        }
+        
+
+        #backBtn, #nextBtn{
+            cursor:pointer;
+            margin: 30px;
+        }
+        .gallery div img:hover{
+            filter: grayscale(0);
+            cursor:pointer;
+            transform: scale(1.08)
+        }
+        .gallery2 div img:hover{
+            filter: grayscale(0);
+            cursor:pointer;
+            transform: scale(1.08)
+        }
+        
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agents</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="index-agents.html" class="logo-font">
+                <img src="valo-logo.png" width="85" height="65" class="logo">
+                <span>Valorant</span>
+            </a>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Agents</a></li>
+                <li><a href="#">Maps</a></li>
+                <li><a href="#">Gameplay</a></li>
+                <li><a href="#">Reviews</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="background-image">
+        <div class="content">
+            <h1>Valorant Agents</h1>
+            <p>Valorant Agents are divided into four roles: Initiators, Controllers, Sentinels and Duelists. Agents can be unlocked, or recruited, for free simply through playing. Below you'll find a list of every Valorant character, sorted by role.</p>
+        </div>
+    </div>
+
+    <!-- All the agents will be depicted below according to their type -->
+    <div class="agents">
+        <div class="initiators">
+            <h2>Initiators</h2>
+            <p>The abilities of agents under this role focus on initiating attacks on site, flushing enemies out of hiding spots and corners in order to assist the team when charging into battle.</p>
+            
+            <div class="gallerywrapper">
+                <img src="images/backbutton.png" id="initiatorsBackBtn" height="100" width="100">
+                
+                <div class="gallery">
+                    <div>
+                        <span><img src="images/kayo.png" height="450" width="300">KAY/O</span>
+                        <span><img src="images/skye.png"height="450" width="300">Skye</span>
+                        <span><img src="images/sova.png" height="450" width="300">Sova</span>
+                    </div>
+                    <div>
+                        <span><img src="images/fade.png" height="450" width="250"><br>Fade</span>
+                        <span><img src="images/geko.png" height="450" width="400">Gekko</span>
+                        <span><img src="images/breach.png" height="450" width="250">Breach</span>
+                    </div>
+                </div>
+
+                <img src="images/button.png" id="initiatorsNextBtn" height="100" width="100">            
+            </div>
+            
+
+
+    </div>
+    <div class="agents2">
+            <div class="Controllers">
+            <h2>Controllers</h2>
+            <p>The abilities of agents under this role allow them to assist their teammates by cutting enemy vision, taking control of an area, and forcing enemies into choke points.</p>
+            
+            <div class="gallerywrapper">
+                <img src="images/backarrow.png" id="controllersBackBtn" height="100" width="100">
+                
+                <div class="gallery">
+                    <div>
+                        <span><img src="images/omen.png" height="450" width="300">Omen</span>
+                        <span><img src="images/harbor.png"height="450" width="300">Harbor</span>
+                        <span><img src="images/viper.png" height="450" width="300">Viper</span>
+                    </div>
+                    <div>
+                        <span><img src="images/brim.png" height="450" width="280">Brimstone</span>
+                        <span></span>
+                        <span><img src="images/astra.png" height="450" width="300">Astra</span>
+                        
+                    </div>
+                </div>
+
+                <img src="images/arrow.png" id="controllersNextBtn" height="100" width="100">
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div class="agents3">
+        <div class="Duelists">
+            <h2>Duelists</h2>
+            <p>Agents under this role have abilities that allow them to focus on being the first to enter sites and engage the enemy.</p>
+            
+            <div class="gallerywrapper">
+                <img src="images/backbutton.png" id="duelistsBackBtn" height="100" width="100">
+                
+                <div class="gallery">
+                    <div>
+                        <span><img src="images/reyna.png" height="450" width="280"><br>Reyna</span>
+                        <span><img src="images/phoenix.png"height="450" width="280">Phoenix</span>
+                        <span><img src="images/raze.png" height="450" width="300">Raze</span>
+                    </div>
+                    <div>
+                        <span><img src="images/jett.png" height="450" width="300"><br>Jett</span>
+                        <span><img src="images/neon.png" height="450" width="300">Neon</span>
+                        <span><img src="images/yoru.png" height="450" width="200"><br>Yoru</span>
+                    </div>
+                </div>
+
+                <img src="images/button.png" id="duelistsNextBtn" height="100" width="100">            
+            </div>
+            
+
+
+    </div>
+
+    <div class="agents4">
+        <div class="sentinels">
+            <h2>Sentinels</h2>
+            <p>The abilities of agents under this role focus on defensive play, with emphasis on supporting the rest of the team through providing<br> intel, anchoring down sites, and preventing the enemy from flanking. The game currently has four Sentinel agents in its roster.</p>
+            
+            <div class="gallerywrapper">
+                <img src="images/backarrow.png" id="sentinelsBackBtn" height="100" width="100">
+                
+                <div class="gallery2">
+                    <div>
+                        <span><img src="images/sage.png" height="450" width="230"><br>Sage</span>
+                        <span></span>
+                        <span><img src="images/chamber.png"height="450" width="230"><br>Chamber</span>
+                        
+                    </div>
+                    <div>
+                        <span><img src="images/kj.png" height="450" width="280"><br>KillJoy</span>
+                        <span></span>
+                        <span><img src="images/cypher.png" height="450" width="230"><br>Cypher</span>
+                        
+                    </div>
+                </div>
+
+                <img src="images/arrow.png" id="sentinelsNextBtn" height="100" width="100">            
+            </div>
+    </div>
+<script>
+        let initiatorsScrollContainer = document.querySelector(".initiators .gallery");
+        let initiatorsBackBtn = document.getElementById("initiatorsBackBtn");
+        let initiatorsNextBtn = document.getElementById("initiatorsNextBtn");
+
+        initiatorsScrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            initiatorsScrollContainer.scrollLeft += evt.deltaY;
+        });
+
+        initiatorsNextBtn.addEventListener("click", () => {
+            initiatorsScrollContainer.style.scrollBehavior = "smooth";
+            initiatorsScrollContainer.scrollLeft += 1000;
+        });
+
+        initiatorsBackBtn.addEventListener("click", () => {
+            initiatorsScrollContainer.style.scrollBehavior = "smooth";
+            initiatorsScrollContainer.scrollLeft -= 1000;
+        });
+
+        let controllersScrollContainer = document.querySelector(".Controllers .gallery");
+        let controllersBackBtn = document.getElementById("controllersBackBtn");
+        let controllersNextBtn = document.getElementById("controllersNextBtn");
+
+        controllersScrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            controllersScrollContainer.scrollLeft += evt.deltaY;
+        });
+
+        controllersNextBtn.addEventListener("click", () => {
+            controllersScrollContainer.style.scrollBehavior = "smooth";
+            controllersScrollContainer.scrollLeft += 1000;
+        });
+
+        controllersBackBtn.addEventListener("click", () => {
+            controllersScrollContainer.style.scrollBehavior = "smooth";
+            controllersScrollContainer.scrollLeft -= 1000;
+        });
+
+        let duelistsScrollContainer = document.querySelector(".Duelists .gallery");
+        let duelistsBackBtn = document.getElementById("duelistsBackBtn");
+        let duelistsNextBtn = document.getElementById("duelistsNextBtn");
+
+        duelistsScrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            duelistsScrollContainer.scrollLeft += evt.deltaY;
+        });
+
+        duelistsNextBtn.addEventListener("click", () => {
+            duelistsScrollContainer.style.scrollBehavior = "smooth";
+            duelistsScrollContainer.scrollLeft += 1000;
+        });
+
+        duelistsBackBtn.addEventListener("click", () => {
+            duelistsScrollContainer.style.scrollBehavior = "smooth";
+            duelistsScrollContainer.scrollLeft -= 1000;
+        });
+
+        let sentinelsScrollContainer = document.querySelector(".sentinels .gallery2");
+        let sentinelsBackBtn = document.getElementById("sentinelsBackBtn");
+        let sentinelsNextBtn = document.getElementById("sentinelsNextBtn");
+
+        sentinelsScrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            sentinelsScrollContainer.scrollLeft += evt.deltaY;
+        });
+
+        sentinelsNextBtn.addEventListener("click", () => {
+            sentinelsScrollContainer.style.scrollBehavior = "smooth";
+            sentinelsScrollContainer.scrollLeft += 1000;
+        });
+
+        sentinelsBackBtn.addEventListener("click", () => {
+            sentinelsScrollContainer.style.scrollBehavior = "smooth";
+            sentinelsScrollContainer.scrollLeft -= 1000;
+        });
+    </script>
+</body>
+</html>
