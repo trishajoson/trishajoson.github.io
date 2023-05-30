@@ -461,6 +461,16 @@
             line-height: 30px;
             padding-left: 50px;
           }
+          .breeze h3{
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color:;
+            font-weight: 300;
+            padding: 5px;
+            line-height: 30px;
+            padding-left: 50px;
+            padding-top: 40px;
+          }
 
           .gallery-box{
             position: relative;
@@ -526,6 +536,16 @@
             line-height: 30px;
             padding-left: 50px;
           }
+          .split h3{
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color:;
+            font-weight: 300;
+            padding: 5px;
+            line-height: 30px;
+            padding-left: 50px;
+            padding-top: 40px;
+          }
 
           .ascent{
             
@@ -557,6 +577,17 @@
             line-height: 30px;
             padding-left: 50px;
           }
+          .ascent h3{
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color:;
+            font-weight: 300;
+            padding: 5px;
+            line-height: 30px;
+            padding-left: 50px;
+            padding-top: 40px;
+          }
+
 
           .haven{
             
@@ -587,6 +618,16 @@
             padding: 5px;
             line-height: 30px;
             padding-left: 50px;
+          }
+          .haven h3{
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color: black;
+            font-weight: 300;
+            padding: 5px;
+            line-height: 30px;
+            padding-left: 50px;
+            padding-top: 40px;
           }
 
           .lotus{
@@ -620,5 +661,185 @@
             line-height: 30px;
             padding-left: 50px;
           }
+
+          .lotus h3{
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color:#26194D;
+            font-weight: 300;
+            padding: 5px;
+            line-height: 30px;
+            padding-left: 50px;
+            padding-top: 40px;
+          }
+
+          .pearl{
+            
+            background-color: #abe9cd;
+            background-image: linear-gradient(45deg, #abe9cd 0%, #3eadcf 74%);
+
+
+            border-bottom: 3px solid black;
+
+            z-index: -1;
+            
+          }
+
+          .pearl h1{
+            z-index: 1;
+            font-size: 50px;
+            font-family: 'VALORANT', sans-serif;
+            color: black;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left:50px;
+            
+          }
+
+          .pearl h5{
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color: black;
+            font-weight: 300;
+            padding: 5px;
+            line-height: 30px;
+            padding-left: 50px;
+          }
+
+          .pearl h3{
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color:#26194D;
+            font-weight: 300;
+            padding: 5px;
+            line-height: 30px;
+            padding-left: 50px;
+            padding-top: 40px;
+          }
+
+          .bind{
+            
+            background-color: #dfa375;
+            background-image: linear-gradient(315deg, #dfa375 0%, #c58e7f 74%);
+            border-bottom: 3px solid black;
+             z-index: -1;
+            
+          }
+
+          .bind h1{
+            z-index: 1;
+            font-size: 50px;
+            font-family: 'VALORANT', sans-serif;
+            color: black;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left:50px;
+            
+          }
+
+          .bind h5{
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            font-weight: 300;
+            padding: 5px;
+            line-height: 30px;
+            padding-left: 50px;
+          }
+
+          .bind h3{
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color:#26194D;
+            font-weight: 300;
+            padding: 5px;
+            line-height: 30px;
+            padding-left: 50px;
+            padding-top: 40px;
+          }
+
+          .fracture{
+            
+            background-color: #f2cf43;
+            background-image: linear-gradient(315deg, #f2cf43 0%, #19a186 74%);
+            border-bottom: 3px solid black;
+             z-index: -1;
+            
+          }
+
+          .fracture h1{
+            z-index: 1;
+            font-size: 50px;
+            font-family: 'VALORANT', sans-serif;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left:50px;
+            
+          }
+
+          .fracture h5{
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color: black;
+            font-weight: 300;
+            padding: 5px;
+            line-height: 30px;
+            padding-left: 50px;
+          }
+
+          .fracture h3{
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color:#26194D;
+            font-weight: 300;
+            padding: 5px;
+            line-height: 30px;
+            padding-left: 50px;
+            padding-top: 40px;
+          }
+
+          .icebox{
+            
+            background-color: #70a1ff;
+            background-image: linear-gradient(45deg, #70a1ff 0%, #c2c0c0 74%);
+            border-bottom: 3px solid black;
+             z-index: -1;
+            
+          }
+
+          .icebox h1{
+            z-index: 1;
+            font-size: 50px;
+            font-family: 'VALORANT', sans-serif;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left:50px;
+            
+          }
+
+          .icebox h5{
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color: black;
+            font-weight: 300;
+            padding: 5px;
+            line-height: 30px;
+            padding-left: 50px;
+          }
+
+          .icebox h3{
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color:#26194D;
+            font-weight: 300;
+            padding: 5px;
+            line-height: 30px;
+            padding-left: 50px;
+            padding-top: 40px;
+          }
+
+
 
 
