@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.cdnfonts.com/css/valorant');
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /*GENERAL CSS OF NAVBAR*/
         * {
             padding: 0;
@@ -59,19 +59,18 @@
             color: azure;
             display: flex;
             align-items: center;
-            height: 100%; /* Added height property */
+            height: 100%; 
         }
 
         .logo-font img {
-            margin-right: 10px; /* Added margin to separate the logo from the text */
-             /* Added height property to match the height of the navbar */
+            margin-right: 10px; 
         }
 
         .logo-font span {
             display: flex;
             align-items: center;
             padding-top: 20px;
-            height: 100%; /* Added height property to match the height of the navbar */
+            height: 100%; 
         }
 
 /*CSS FOR AGENTS*/
@@ -301,7 +300,7 @@
             text-align: center;
             padding-top: 10px;
             height: 100%;
-            font-size: 16px; /* Adjust the font size as needed */
+            font-size: 16px;
           }
         
           .gallery2-item span {
@@ -309,7 +308,7 @@
             text-align: center;
             padding-top: 10px;
             height: 100%;
-            font-size: 16px; /* Adjust the font size as needed */
+            font-size: 16px;
           }
         
 
@@ -349,7 +348,7 @@
         .hero {
             position: relative;
             overflow: hidden;
-            height: 90vh;
+            height: 100vh;
           }
           
           .videobg {
@@ -361,6 +360,7 @@
             object-fit: cover;
             z-index: -1;
             filter: brightness(0.6) contrast(1.2) saturate(1.2);
+            
           }
           
           .hero-text {
@@ -382,7 +382,7 @@
           .cnts {
             position: absolute;
             z-index: 3;
-            top: 66%;
+            top: 60%;
             left: 52.3%;
             transform: translate(-66%, -52.3%);
           }
@@ -976,25 +976,203 @@
       
     }
     
+    
     .content3 {
       color: black;
+      float: left;
+      margin-right:400px;
   }
   
   .content3 h1 {
-      font-size: 70px;
+      font-size: 50px;
       font-family: 'VALORANT', sans-serif;
+      margin-bottom: 10px;
       margin-top: 50px;
-      text-align: center;
+      text-align: left;
+      margin-left:180px;
   }
   
   .content3 p {
-      margin-left: 50px;
-      margin-right:50px;
+      margin-left: 180px;
+      margin-right: 100px;
       font-size: 15px;
       font-family: 'Roboto', sans-serif;
-      text-align: center;
-      margin-bottom: 20px;
+      text-align: left;
+      margin-bottom: 10px;
   }
-      
-      
+  
+  .content4 {
+    float: left;
+    margin-right:400px;
+}
+
+.content4 h1 {
+    font-size: 40px;
+    color: red;
+    font-family: 'VALORANT', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    text-align: left;
+    margin-left:180px;
+}
+
+.content4 p {
+    margin-left: 180px;
+    margin-right: 100px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+
+  .para img{
+    position: absolute;
+    top:750px;
+    right:60px;
+  }
+
+  .para{
+    position: static;
+    background-color: white;
+  }
+
+  table{
+    background-color: black;
+    padding: 15px;
+    position: absolute;
+    top: 1300px;
+    left: 180px;
+  }
+  th{
+    padding: 10px;
+  }
+
+  td{
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+
+  .ranks{
+    position: absolute;
+    top: 1181px;
+    left: 180px;
+  }
+  .ranks img{
+    padding-top: 120px;
+    padding-left: 40px;
+  }
+
+  footer{
+    background-color: #111;
+    position: relative;
+    margin-top:400px;
+
+  }
+  .footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+  }
+  .socialicons{
+    display: flex;
+    justify-content: center;
+  }
+  .socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  .socialicons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+  }
+
+  .socialicons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+
+  }
+  .socialicons a:hover i{
+    color:white;
+    transition: 0.5s;
+  }
+
+  .footerbottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+  }
+  .footerbottom p{
+    color: white;
+  }
+  .designer{
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
+  }
+
+  .valo-music{
+    position: relative;
+    color: purple;
+    margin-top:800px;
+    margin-left: 180px;
+    font-size: 50px;
+    font-family: 'VALORANT', sans-serif;
+  }
+  .valo-music2{
+    position: relative;
+    color: black;
+    margin-top:20px;
+    margin-left: 181px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  
+  .music{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    position:absolute;
+    align-items: center;
+    top: 1700px;
    
+  }
+  .music2{
+    width: 90%;
+    max-width: 900px;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(red, 0 ,0,0.4);
+    background-color: #fff;
+    color: #555;
+    border-radius: 8px;
+    background-color: white;
+    margin-left:180px;
+    border: solid 2px black;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+  .track{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+  }
+  .track img{
+    width: 70px;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+
+  .track div{
+    flex: 1;
+  }

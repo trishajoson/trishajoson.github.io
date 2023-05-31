@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body{
             margin:0;
@@ -49,15 +50,126 @@
             </div>
         </div>
     </div>
+     
+    <div class="para">
+    <div class="text-container">
+        <div class="clearfix">
+  <!-- Floating elements content3 and content4 go here -->
+</div>
 
-    <div class="content3">
-        <h1>About</h1>
-        <p>Valorant is a tactical shooting game involving two teams with 5 players in each team. Every player can sign in and play remotely from anywhere in the world. <br>Every game has 25 rounds and the team that wins 13 of them first wins the game. Players can choose their in-game characters called agents<br> at the start of the game. Players can buy abilities and weapons at the start of the game.</p>
+        <div class="content3">
+            <h1>About</h1>
+            <p>Valorant is a free-to-play first-person tactical 5 v 5 hero shooter developed and published by Riot Games, for Windows. Every player can sign in and play remotely from anywhere in the world. Every game has 25 rounds and the team that wins 13 of them first wins the game. Players can also choose their in-game characters called agents at the start of the game. Players can buy abilities and weapons at the start of the game.</p>
+        </div>
+        <div class="content4">
+            <h1>Story</h1>
+            <p>VALORANT takes place on a version of Earth in the near future following an event known as First Light. This event spans the entire globe, leading to big transformations to life, technology, and how governments operate. However, select people across the globe start to gain abilities stemming from this massive event. These gifted individuals are called Radiants.<br>
+            In response to First Light, a shadow organization founds the VALORANT Protocol, which pulls together agents from all over the world. These Agents consist of Radiants and other individuals equipped with Radiant technology. Due to the backstories of these characters, the VALORANT team features interesting dynamics as the individuals not only sometimes know each other, but they also come from a wide spectrum of backgrounds ranging from crime to the military.</p>
+        </div>
+        <img src="images/story.png" height="450" width="400" style="float: right;">
     </div>
+   
+</div>
 
-    <
-      
+<div class="modes">
+    <div class="content3">
+        <h1 style="color:blueviolet; font-size:35px;">Modes &</h1>
+    </div>
+    <br>
+    <table>
+        <tr>
+        <th><img src="images/spike-rush.png" height="100" width="100"></th>
+        <th><img src="images/deathmatch.png" height="100" width="100"></th>
+        <th><img src="images/unrated.png" height="100" width="100"></th>
+        <th><img src="images/swiftplay.png" height="100" width="100"></th>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;Spike Rush</td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;Death Match</td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unrated</td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Swiftplay</td>
+    </tr>
+    </table>
+</div>
+
+<div class="ranks">
+    <div class="content3">
+        <h1 style="color:limegreen; font-size:35px;">Ranks</h1>
+    </div>
+    <img src="images/valo-ranks.jpg" height="200" width='500'>
+</div>
+<p class="valo-music">Valorant Music</p>
+<p class="valo-music2">Listen to valorant's latest hit for the champions 2021:</p>
+<div class="music">
+    <div class="music2">
+        <p> Artist: Grabbitz </p>
+        <h1>Die For You</h1>
+        <div class="track">
+            <img src="images/play.png" id="playBtn">
+            <div id="waveform"></div>
+        </div>
+    </div>
+    </div>
+</div>
+<section>
+    <footer>
+        <div class="footercontainer">
+            <div class="socialicons">
+                <a href="https://www.facebook.com/RiotGames/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/riotgames/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/riotgames?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.riotgames.mobile.leagueconnect&hl=en&gl=US&pli=1"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="https://www.youtube.com/riotgames"><i class="fa-brands fa-youtube"></i></a>
 
 
+            </div>
+            
+        </div>
+        <div class="footerbottom">
+            <p>Copyright &copy2023 Riot Games</p>
+        </div>
+    </footer>
+</section>
+
+
+<script type="module">
+
+    var playBtn= document.getElementById("playBtn");
+
+    import WaveSurfer from 'https://unpkg.com/wavesurfer.js@beta'
+    
+    const wavesurfer = WaveSurfer.create({
+      container: '#waveform',
+      waveColor: '#ddd',
+      progressColor: '#ff006c',
+      barWidth:4,
+      responsive:true,
+      height: 90,
+      barRadius:4,
+      url: 'images/Die For You ft. Grabbitz.mp3',
+    })
+    
+    wavesurfer.on('interaction', () => {
+      wavesurfer.play()
+    });
+
+    playBtn.onclick = function(){
+        wavesurfer.playPause();
+        if(playBtn.src.includes("images/play.png")){
+            playBtn.src = "images/pause.png";
+            
+        }else{
+            playBtn.src = "images/play.png";
+        }
+
+    }
+
+    wavesurfer.on('finish', function(){
+        playBtn.src = "images/play.png";
+        wavesurfer.stop();
+    })
+    </script>
+        
+    
 </body>
 </html>
