@@ -417,22 +417,27 @@
           ],
         ];
       
-        for (var i = 0; i < galleries.length; i++) {
-          var gallery = galleries[i];
-          var sectionBtns = gallery.getElementsByClassName("btn");
-          var sectionImages = images[i];
-      
-          for (var j = 0; j < sectionBtns.length; j++) {
-            sectionBtns[j].onclick = createClickHandler(gallery, sectionImages, j);
-          }
-        }
-      
-        function createClickHandler(gallery, sectionImages, index) {
-          return function() {
-            var galleryImage = gallery.querySelector("img");
-            galleryImage.src = sectionImages[index];
-          };
-        }
+        // Loop through the 'galleries' array
+       for (var i = 0; i < galleries.length; i++) {
+        var gallery = galleries[i]; // Get the current gallery element
+        var sectionBtns = gallery.getElementsByClassName("btn"); // Get the buttons within the current gallery
+        var sectionImages = images[i]; // Get the corresponding images for the current gallery
+  
+    // Loop through the buttons within the current gallery
+    for (var j = 0; j < sectionBtns.length; j++) {
+      // Assign a click handler to each button using the 'createClickHandler' function
+      sectionBtns[j].onclick = createClickHandler(gallery, sectionImages, j);
+    }
+  }
+  
+  // Function to create a click handler for a button
+         function createClickHandler(gallery, sectionImages, index) {
+         return function() {
+            var galleryImage = gallery.querySelector("img"); // Get the image element within the gallery
+            galleryImage.src = sectionImages[index]; // Set the source of the image to the corresponding image URL
+    };
+  }
+  
       </script>
       
 </body>

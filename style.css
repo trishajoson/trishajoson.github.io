@@ -976,7 +976,7 @@
       
     }
     
-    
+   /* Continuing ABOUT PAGE*/ 
     .content3 {
       color: black;
       float: left;
@@ -1065,7 +1065,7 @@
     padding-top: 120px;
     padding-left: 40px;
   }
-
+/* GENERAL CODE FOR FOOTER */
   footer{
     background-color: #111;
     position: relative;
@@ -1123,7 +1123,7 @@
     font-weight: 400;
     margin: 0 5px;
   }
-
+/* CODE FOR THE VALORANT MUSIC*/
   .valo-music{
     position: relative;
     color: purple;

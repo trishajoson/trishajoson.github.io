@@ -195,11 +195,14 @@
     <script>
         var videoItems = document.querySelectorAll('.video-item');
 
+        // Iterate over each video item using the 'forEach' method
         videoItems.forEach(function(item) {
-            item.addEventListener('click', function() {
-                this.classList.toggle('active');
-            });
-        });
+        // Add a click event listener to each video item
+        item.addEventListener('click', function() {
+        // Toggle the presence of the 'active' class on the clicked video item
+        this.classList.toggle('active');
+  });
+});
     </script>
       
 
