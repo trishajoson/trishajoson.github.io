@@ -1069,8 +1069,13 @@
   footer{
     background-color: #111;
     position: relative;
-    margin-top:400px;
+    margin-top:300px;
 
+  }
+  .footer2{
+    background-color: #111;
+    position: relative;
+    margin-top:0px;
   }
   .footercontainer{
     width: 100%;
